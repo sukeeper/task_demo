@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+table{
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    background-color: cornflowerblue;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    
+}
+body{
+    background-image: url("img/简易生活02.jpg");
+}
+.td1{
+    color: chocolate;
+}
+.td2{
+    color: aqua;
+}
+.td3{
+    color: cornflowerblue;
+}

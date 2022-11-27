@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        /* background-color: #44cef6; */
+        background-image: url("img/ok.gif");
+        color: antiquewhite;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .main {
+        margin: 200px auto;
+        width: 650px;
+        height: 300px;
+        /* background-color: #0c8918; */
+        gap: 3px;
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 500px 150px;
+        overflow: hidden;
+        text-align: center;
+      }
+      input {
+        display: none;
+      }
+      label {
+        text-align: center;
+        line-height: 100px;
+        font-size: 1em;
+      }
+      .tab_s {
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 5em;
+      }
+      .tab_s:first-child {
+        background-color: #8d4bbb;
+      }
+      .tab_s:nth-child(2) {
+        background-color: #be002f;
+      }
+      .tab_s:nth-child(3) {
+        background-color: #88ada6;
+      }
+      .tab {
+        grid-row: 1/4;
+        grid-column: 1/2;
+        background-color: #db5a6b;
+        transition: 1s;
+      }
+      #l1 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background-color: #8d4bbb;
+      }
+      #l2 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        background-color: #be002f;
+      }
+      #l3 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        background-color: #88ada6;
+      }
+      #l1:hover,
+      #l2:hover,
+      #l3:hover {
+        /* 控制手型 */
+        cursor: pointer;
+        background-color: rgba(227, 165, 165, 0.6);
+      }
+      #b1:checked ~ .tab {
+        transform: translateY(0px);
+      }
+      #b2:checked ~ .tab {
+        transform: translateY(-300px);
+      }
+      #b3:checked ~ .tab {
+        transform: translateY(-600px);
+      }
+      .main img {
+        width: 500px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <input type="radio" name="button" id="b1" />
+      <input type="radio" name="button" id="b2" />
+      <input type="radio" name="button" id="b3" />
+      <label for="b1" id="l1">BigData_01</label>
+      <label for="b2" id="l2">BigData_02</label>
+      <label for="b3" id="l3">BigData_03</label>
+      <div class="tab">
+        <div class="tab_s">
+          <img src="./img/100.gif" alt="404" />
+        </div>
+        <div class="tab_s">
+          <img src="./img/11.gif" alt="404" />
+        </div>
+        <div class="tab_s">
+          <img src="./img/12.gif" alt="404" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

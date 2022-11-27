@@ -1,0 +1,61 @@
+*{
+    padding: auto;
+    margin: 0;
+    border: none;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: black;
+    font-weight: 800;
+    background-color: white;
+}
+#main{
+    width: 800px;
+    height: auto;
+    margin: 10px auto;
+}
+#main h1{
+    height: 44px;
+    border-bottom: 1px black solid;
+    padding-left: 10px;
+    line-height: 44px;
+    color: blue;
+    font-size: 22px;
+    /* text-align: center; */
+}
+#main .content{
+    margin-top: 16px;
+    height: 878px;
+    /* width: 100vw; */
+    background-image:url("img/yunduo.png"),url("img/dm.png"),url("img/tsg.png") ;
+    background-repeat: no-repeat;
+    background-position: right 49px,left top, left bottom;
+}
+#main dl{
+    padding-left: 90px;
+    padding-top:80px ;
+    font-size: 0;    /*便于调整dd元素的对齐方式*/
+    /* list-style-position: outside; */
+    /* list-style: none;  */
+}
+#main dl dt{
+    /* border: 2px black solid; */
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    background-image: url("img/diamond2.png") ;
+    background-repeat: no-repeat;    /* 关闭元素在列表内的重复pingpu */
+    /* center是将背景与元素中心对齐 */
+    background-position: left center;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+#main dl dd{
+    /* text-align: center;
+    border: 2px black solid; */
+    padding-left: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    font-size: 18px;
+}

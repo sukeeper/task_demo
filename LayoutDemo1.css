@@ -1,0 +1,104 @@
+
+						*{
+							margin: 0 2px;
+							padding: 0;
+							text-decoration: none;
+							list-style: none;
+							/* background-repeat:no-repeat; */
+						}
+						body{
+							background-image: url("img/简易生活03.jpg");
+							background-repeat: repeat;
+							/* text-align: center; */
+						}
+						.main{
+							width: 100%; /* 这里可以设置整个盒子的布局 */
+							margin: auto; /* 让他水平居中 */
+							
+						}
+						.header,.container,.footer,.nav{
+							float: left;
+							width: 100%;
+							/* 内边距会影响整个盒子的实际大小,所以我们要用下面的方法来处理一下 */
+							box-sizing: border-box;
+						}
+						.header{
+							/* background-color: peachpuff; */
+							background-color: none;
+							padding: 20px;
+							text-align: center; 
+						}
+						.nav{
+							background: paleturquoise; 
+						
+
+						}
+						.nav a{
+							color: black;
+							padding: 10px 20px;
+							display: inline-block; /* 让链接以块的形式显示 */ 
+						}
+						.nav a:hover{
+							/* background: paleturquoise; */
+							background: none;
+							color: papayawhip;
+							
+						}
+						/* 我们让左右两边都固定宽度 */
+						.lside{
+							width: 200px;
+							float: left;
+						}
+						.risde{
+							width: 200px;
+							float: right;
+						}
+						/* 添加中间盒子的左右边距 */
+						.content{
+							margin: 0px 205px;
+							align-items: center;
+							position: relative;
+							left: 350px;
+						}
+						/* 添加内边距 */
+						.lside,.risde,.content{
+							padding: 5px;
+							box-sizing: border-box;
+						}
+						.footer{
+							padding: 10px;
+							/* background-color: #FFEFD5; */
+							background-color: none;
+							text-align: center;
+						}
+						/* 在添加一个功能，当浏览宽度小于700时，三个边栏进行竖排 */
+						@media screen and (max-width:700px) {
+							.lside,.risde,.content{
+								width: 100%;
+								margin: 0px;
+							}
+						.www{
+							width: auto;
+							height: auto;
+							}}
+						.content table{
+							align-items: center;
+							border: 2px burlywood solid;
+						}
+						.content td{
+							align-items: center;
+							border: 2px burlywood solid;
+						}
+						.content h2{
+							margin-right: 100px;
+
+						}
+						.footer img{
+							width: 150px;
+							height: 150px;
+							opacity: 50%;
+						}
+						.footer button{
+							color: #bacac6;
+						}
+						

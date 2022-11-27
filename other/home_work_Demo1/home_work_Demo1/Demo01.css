@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	
+	padding: 0mm;
+	
+	border: yellow;
+}
+body{
+	font-size: 0.875rem;
+	font-family: "楷体";
+	color: black;
+	background-image: url("img/bg.jpg");
+}
+.hearder1 h1{
+	background-color: #aaffff;
+	height: 3.125rem;
+	color: #000000;
+	font-size: 1.625rem;
+	letter-spacing: 0.5em;
+	text-align: center;
+	line-height: 3.125rem;
+}
+.hearder1 div{
+	text-align: center;
+	color: #bddbbd;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+.main{
+	width: 878px;
+	height: auto;
+	border: solid 0.0625rem black;
+	padding: 0.625rem ;
+	margin: 0.625rem auto;
+}
+.main p{
+	margin: 1.25rem;
+	text-indent: 2em;
+	text-align: justify;
+}
+.text{
+	font-size: 1.125rem;
+	color: red;
+	font-style: italic;
+}
+.p1{
+	text-decoration: overline;
+}
+.main figure figcaption{
+	margin-top: 0.625rem;
+}
+.sc{
+	margin: auto;
+	text-align: center;
+}
+#tb{
+	width: auto;
+	height: auto;
+}
+
+
